@@ -44,7 +44,7 @@ end
 
 input = gets
 
-input = input.split[]
+input = input.split(" ")
 
 orderedItems = input[1].split(",")
 returnString = ""
@@ -89,6 +89,6 @@ when "Lunch"
   end
 end
 
-order = Breakfast.new(Eggs.new(Toast.new(Coffee.new)))
+order = Breakfast.new(Eggs.new(Eggs.new(Toast.new(Coffee.new))))
 
 puts order.order
