@@ -1,0 +1,17 @@
+Breakfast 1,2,3
+Breakfast 1,2,2,2,3
+Breakfast 1,1,2,3
+Breakfast 1,2,3,3,3,3
+Breakfast -1,-1,-1
+Lunch 1,2,3
+Lunch 1,2,2,2,3
+Lunch 1,1,2,3
+Lunch -1,2,3,3,3,3
+Lunch -1,-1,-1
+Dinner 1,2,3,4
+Dinner 1,2,2,2,3,4
+Dinner 1,1,2,3,4
+Dinner -1,2,3,3,3,3,4
+Dinner -1,-1,-1,4
+Dinner 1,2,3,4,4,4
+q
