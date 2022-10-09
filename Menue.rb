@@ -48,26 +48,28 @@ input = input.split(" ")
 
 orderedItems = input[1].split(",")
 returnString = ""
+outputItems = []
 case input[0]
 when "Breakfast"
-  coffeeCount = 0
+
+  outputItems = Array.new(3, 0)
   returnString += "Breakfast: "
   orderedItems.each do |item|
   case item
-    when "1"
-      returnString += "Eggs, "
-    when "2"
-    returnString += "Toast, "
-    when "3"
-    coffeeCount += 1
+  when "1"
+    outputItems[0] += 1
+  when "2"
+    outputItems[1] += 1
+  when "3"
+    outputItems[2] += 1
+  else
+    puts "Requested item is not on the menu, please try again!"
+    break
   end
   end
 
-  if coffeeCount == 1
-    returnString += "Coffee"
-  elsif coffeeCount > 1
-    returnString += "Coffee(#{coffeeCount})"
-  end
+
+
 when "Lunch"
   sideCount = 0
   hasDrink = false
